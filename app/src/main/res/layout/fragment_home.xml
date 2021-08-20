@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu_btn"
+        android:layout_width="86dp"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="300dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginBottom="200dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        app:menu_colorNormal="@color/primaryColor"
+        app:menu_colorPressed="@color/primaryColor"
+        app:menu_colorRipple="@color/accentColor"
+        app:menu_icon="@drawable/menu"
+        app:menu_openDirection="up"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/poi_browser_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map_marker"
+            app:fab_colorNormal="@color/primaryColor"
+            app:fab_colorPressed="@color/primaryDarkColor"
+            app:fab_colorRipple="@color/accentColor"
+            app:fab_size="mini" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/ar_nav_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/navigation"
+            app:fab_colorNormal="@color/primaryColor"
+            app:fab_colorPressed="@color/primaryDarkColor"
+            app:fab_colorRipple="@color/accentColor"
+            app:fab_size="mini" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>
